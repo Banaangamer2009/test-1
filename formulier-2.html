@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            formulieren 2
+        </title>
+        <style>
+            body{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            
+            .form{
+                font-family: Arial, Helvetica, sans-serif;
+                padding-left: 10%;
+                padding-top: 20%;
+            }
+
+            .vraag-open{
+                border-color: purple blue;
+                border-style: solid;
+            }
+
+            .probleem{
+                border: 2px;
+                border-color: purple blue;
+                border-style: solid;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .verzend-knop{
+                border: none;
+                background-color: rgb(91, 193, 240);
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.5s;
+            }
+
+            .verzend-knop:hover{
+                background-color: rgb(110, 200, 241);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div>
+            <form method="post" action="https://formsubmit.co/ryanenjarno@gmail.com" class="form">
+            
+                Voornaam
+                <br>
+                <input type="text" name="Voornaam&#160;klant" class="vraag-open">
+                <br>
+                <br>
+                Achternaam:
+                <br>
+                <input type="text" name="Achternaam&#160;klant" class="vraag-open">
+                <br>
+                <br>
+                E-mailadres
+                <br>
+                <input type="text" name="E-mailadres&#160;klant" class="vraag-open">
+                <br>
+                <br>
+                Wat is uw probleem?
+                <br>
+                <textarea name="Probleem&#160;klant" cols="25" rows="5" class="probleem"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Verzenden" class="verzend-knop">
+
+            </form>
+        </div>
+        <div></div>
+
+    </body>
+</html>
